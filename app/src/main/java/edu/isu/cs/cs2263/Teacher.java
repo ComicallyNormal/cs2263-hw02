@@ -1,2 +1,4 @@
-package edu.isu.cs.cs2263;public class Teacher {
+package edu.isu.cs.cs2263;
+
+public class Teacher {
 }

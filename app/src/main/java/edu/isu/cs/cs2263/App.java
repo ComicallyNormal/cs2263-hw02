@@ -1,23 +1,27 @@
-/**
- * App.java
- * This class doesn't do much at the moment.
- * @Author Alex Diviney
- * @Version v1.0.0
- */
-
 package edu.isu.cs.cs2263;
-import com.google.gson.Gson;
 
-public class App {
-    public String getGreeting() {
-        return "Hello World!";
-    }
+import com.google.gson.Gson;
+import javafx.application.Application;
+import javafx.scene.Scene;
+import javafx.scene.control.Label;
+import javafx.scene.layout.StackPane;
+import javafx.stage.Stage;
+
+public class App extends Application {
 
     public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
-      HelloFX.main(args);
+        Gson gson = new Gson();
+        launch(args);
+    }
 
-      Gson gson = new Gson();
-
+    @Override
+    public void start(Stage stage) {
+        String javaVersion = System.getProperty("java.version");
+        String javafxVersion = System.getProperty("javafx.version");
+        Label l = new Label("Hello, JavaFX " + javafxVersion + ", running on Java " + javaVersion + ".");
+        Scene scene = new Scene(new StackPane(l), 640, 480);
+        stage.setScene(scene);
+        stage.show();
     }
 }
+
