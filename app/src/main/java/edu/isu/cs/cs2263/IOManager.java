@@ -1,3 +1,4 @@
+//IOManager.java
 package edu.isu.cs.cs2263;
 
 import com.google.gson.Gson;
@@ -10,16 +11,23 @@ import java.nio.Buffer;
 import java.util.ArrayList;
 import java.util.List;
 
+
+/** IOManager Class. Allows the app to store data and read data from files
+ *
+ * @author Alex Diviney
+ * @version 2.0.0
+ */
 public class IOManager {
 
     public IOManager() {
     }
 
-    public void writeData(String file, ArrayList<Student> list) {
-
-
-    }
-
+    //https://howtodoinjava.com/gson/gson-gsonbuilder-configuration/
+    /**
+    testing method that turns an an arraylist into a string json
+     * @param list ArrayList
+     * @return Returns JSON String representation.
+     */
     public static String objToJSON(ArrayList<Student> list) {
         GsonBuilder builder = new GsonBuilder();
         Gson gson = builder.create();
@@ -28,6 +36,10 @@ public class IOManager {
         return listToGSON;
     }
 
+    /**
+     *
+     * @return Returns a test Data set of students.
+     */
     public static ArrayList<Student> studentListSample() {
         ArrayList<Course> genericCourseList = new ArrayList<>();
         ArrayList<Student> genericStudentList = new ArrayList<>();
@@ -58,6 +70,11 @@ public class IOManager {
         return genericStudentList;
     }
 
+    /**
+     *
+     * @param studentList Needs a List of Students
+     * @param fileName Needs the file name of the json file to write to
+     */
     public static void writeData(ArrayList<Student>studentList,String fileName){
         Gson gson = new GsonBuilder()
                 .setPrettyPrinting()
@@ -76,6 +93,12 @@ public class IOManager {
 
     }
 
+    /**
+     *
+     * @param fileName file name of file to read from.
+     * @return Returns an ArrayList of Students.
+     * @throws IOException
+     */
     public static ArrayList<Student> readData(String fileName)throws IOException{
         try {
             Gson gson = new Gson();
