@@ -9,9 +9,9 @@ import java.util.List;
  /** Student Class. holds all student data and methods
         *
         * @author Alex Diviney
-        * @version 2.0.0
+        * @version 2.1.0
         */
-public class Student {
+public class Student{
 
     private String firstName;
     private String lastName;
@@ -97,6 +97,7 @@ public class Student {
         String retString = firstName + " " + lastName;
         return retString;
    }
+
 
 
 }

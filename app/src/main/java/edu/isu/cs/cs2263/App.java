@@ -22,7 +22,7 @@
  * Main app class for the program
  *
  * @author Alex Diviney
- * @version 2.0.0
+ * @version 2.1.0
  */
 package edu.isu.cs.cs2263;
 
