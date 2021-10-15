@@ -14,8 +14,6 @@ clone the github project and use gradle init and gradle run.
 You can put a JSON file in the app/ subdirectory and then point
 the application to look at that file by changing fileName in App.java.
 
- 
-
 ## Contributing
 
 This project is open source, closed contribution

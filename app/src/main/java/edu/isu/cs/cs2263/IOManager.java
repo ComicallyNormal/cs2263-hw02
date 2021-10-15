@@ -94,20 +94,20 @@ public class IOManager {
     }
 
     /**
-     *
+     * Reads data from a file then returns it as an ArrayList
      * @param fileName file name of file to read from.
      * @return Returns an ArrayList of Students.
      * @throws IOException
      */
     public static ArrayList<Student> readData(String fileName)throws IOException{
         try {
-            Gson gson = new Gson();
-            BufferedReader reader = new BufferedReader(new FileReader(fileName));
+            Gson gson = new Gson(); //gson instance
+            BufferedReader reader = new BufferedReader(new FileReader(fileName)); //file reader
 
             //Can someone get fired for my having to write this line of code? Class cast exceptions smh
             //https://stackoverflow.com/questions/27253555/com-google-gson-internal-linkedtreemap-cannot-be-cast-to-my-class
-           TypeToken<ArrayList<Student>> typeToken = new TypeToken<ArrayList<Student>>(){};
-           ArrayList<Student> studentArr = gson.fromJson(reader,typeToken.getType());
+           TypeToken<ArrayList<Student>> typeToken = new TypeToken<ArrayList<Student>>(){}; //essentially allows us to use nested objects
+           ArrayList<Student> studentArr = gson.fromJson(reader,typeToken.getType()); //converts from file to array list
            reader.close();
             return studentArr;
         } catch (FileNotFoundException e) {
