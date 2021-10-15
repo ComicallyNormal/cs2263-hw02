@@ -6,13 +6,16 @@
 /**
  *Tests our Pushback Tokenizer. Makes sure a method is not null
  * @author Alex Diviney
- * @version 2.0.0
+ * @version 2.1.0
  */
 package adapter;
 
 import org.junit.Test;
 import static org.junit.Assert.*;
 
+/**
+ * Tests our Tokenizer
+ */
 public class AppTest {
     @Test public void appHasAGreeting() {
         Tokenizer classUnderTest = new Tokenizer();
