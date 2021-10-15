@@ -26,9 +26,7 @@ public class Course {
     String getSubject(){
         return subject;
     }
-    String title(){
-        return title;
-    }
+    String getTitle(){return title;}
 
     //setters
     public void setNumber(int num){

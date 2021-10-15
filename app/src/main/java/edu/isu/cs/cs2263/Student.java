@@ -3,6 +3,7 @@ package edu.isu.cs.cs2263;
 
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Student {
 
@@ -16,10 +17,10 @@ public class Student {
         lastName = "BAR";
         courseList = new ArrayList<Course>();
     }
-    Student(String first,String last){
+    Student(String first, String last, ArrayList<Course> courses){
         firstName = first;
         lastName = last;
-        courseList = new ArrayList<Course>();
+        courseList = courses;
 
     }
 
@@ -52,6 +53,9 @@ public class Student {
         return retString;
    }
 
+   public ArrayList<Course> getCourseList(){
+        return courseList;
+   }
 
 
 }

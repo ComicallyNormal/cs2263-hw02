@@ -1,0 +1,55 @@
+[
+  {
+    "firstName": "Alex",
+    "lastName": "Diviney",
+    "courseList": [
+      {
+        "number": 1175,
+        "subject": "Math",
+        "title": "Calc 2"
+      },
+      {
+        "number": 3307,
+        "subject": "English",
+        "title": "Technical Writing"
+      }
+    ]
+  },
+  {
+    "firstName": "Baylor",
+    "lastName": "McElroy",
+    "courseList": [
+      {
+        "number": 1175,
+        "subject": "Math",
+        "title": "Calc 2"
+      },
+      {
+        "number": 2229,
+        "subject": "Electrical Engineering",
+        "title": "AC/DC Currents"
+      }
+    ]
+  },
+  {
+    "firstName": "Lexus",
+    "lastName": "Texas",
+    "courseList": [
+      {
+        "number": 1170,
+        "subject": "Math",
+        "title": "Pre-Calc"
+      },
+      {
+        "number": 1105,
+        "subject": "Art",
+        "title": "Art History"
+      }
+    ]
+  },
+  {
+    "firstName": "FOO",
+    "lastName": "BAR",
+    "courseList": []
+  }
+]
